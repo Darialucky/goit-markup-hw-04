@@ -415,6 +415,9 @@ ul {
   letter-spacing: 0.02em;
 }
 
+
+
+
 .footer {
   background: #2e2f42;
   padding: 100px 0;
@@ -455,9 +458,14 @@ ul {
   max-width: 264px;
 }
 
+.team-soc-item-icon {
+  width: 40px;
+height: 40px;
+}
 .container-footer-two {
   display: flex;
-  align-items: baseline;
   width: 208px;
+  gap: 16px;
 height: 80px;
+padding-bottom: 16px;
 }
