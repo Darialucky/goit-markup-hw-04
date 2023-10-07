@@ -62,6 +62,7 @@ ul {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -74,7 +75,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  color: #404bbf;
 }
+
 
 .header-logo {
   color: #4d5ae5;
@@ -88,6 +92,8 @@ ul {
   align-items: center;
   margin-right: 76px;
   padding: 24px 0;
+  position: relative;
+  color: #404bbf;
 }
 
 .header-logo-part {
@@ -98,6 +104,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+  
 }
 
 .header-menu-list-one {
@@ -113,6 +120,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  
 }
 
 .header-menu-list:hover,
@@ -136,6 +144,7 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .header-contacts-main:focus,
@@ -154,7 +163,7 @@ ul {
 
 .main {
   background-color: #2e2f42;
-  background-image: linear-gradient(
+  background-image:linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -194,6 +203,7 @@ ul {
   min-width: 169px;
   height: 56px;
   border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .main-button:hover,
@@ -223,6 +233,7 @@ ul {
   background: #f4f4fd;
   align-items: center;
   justify-content: center;
+  margin-bottom: 8px
 }
 
 .content-info-icon {
@@ -321,12 +332,25 @@ ul {
     gap: 24px;
 }
 
+.team-soc-item {
+}
+
+.team-soc-item-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .team-soc-icon {
   width: 40px;
   height: 40px;
   fill: rgba(244, 244, 253, 1);
-  background-color: rgba(77, 90, 229, 1);
-  border-radius: 50%;
+  
 }
 
 .our-portfolio {
@@ -377,6 +401,11 @@ ul {
   padding: 100px 0;
 }
 
+.container-footer [
+  display: flex;
+  align-items: baseline;
+]
+
 .footer-logo {
   color: #4d5ae5;
   font-size: 18px;
@@ -407,8 +436,9 @@ ul {
   max-width: 264px;
 }
 
-.container-footer {
+.container-footer-two {
+  display: flex;
+  align-items: baseline;
   width: 208px;
 height: 80px;
-
 }
