@@ -93,7 +93,6 @@ ul {
   margin-right: 76px;
   padding: 24px 0;
   position: relative;
-  color: #404bbf;
 }
 
 .header-logo-part {
@@ -120,8 +119,27 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
-  
+  display: block;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
+
+.current {
+  color: #404bbf;
+}
+
+.header-menu-list:hover::after,
+.header-menu-list:focus::after {
+  content: "";
+  position: absolute; 
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px; 
+} 
 
 .header-menu-list:hover,
 .header-menu-list:focus {
@@ -173,6 +191,7 @@ ul {
   background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 .main-page {
@@ -203,7 +222,7 @@ ul {
   min-width: 169px;
   height: 56px;
   border: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .main-button:hover,
