@@ -108,7 +108,6 @@ ul {
 .header-menu-list-one {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .header-menu-list {
@@ -193,6 +192,7 @@ ul {
   padding-top: 188px;
   padding-bottom: 188px;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .main-page {
@@ -245,20 +245,17 @@ ul {
 }
 
 .content-info-svg {
-  width: 264px;
   height: 112px;
-  display: flex;
-  border-radius: 4px;
   border: 1px solid #8e8f99;
-  background: #f4f4fd;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
 }
 
 .content-info-icon {
-  width: 100%;
-  height: 100%;
 }
 
 .content-info-subtitle {
@@ -294,12 +291,12 @@ ul {
 }
 .our-team {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
+  flex-wrap: wrap;
 }
+
 .our-team-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -334,16 +331,12 @@ ul {
   margin-bottom: 8px;
 }
 
-.images {
-  padding: 32px 0;
-}
-
 .team-soc-list {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 8px;
   gap: 24px;
+  align-items: center;
 }
 
 .team-soc-item {
@@ -354,12 +347,14 @@ ul {
 .team-soc-item-icon {
   width: 100%;
   height: 100%;
-  border-radius: 0px 0px 4px 4px;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-item-icon:hover,
@@ -367,8 +362,6 @@ ul {
   background-color: #404bbf;
 }
 .team-soc-icon {
-  width: 40px;
-  height: 40px;
   fill: rgba(244, 244, 253, 1);
 }
 
