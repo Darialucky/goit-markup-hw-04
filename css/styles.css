@@ -302,7 +302,6 @@ ul {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .our-team-img {
-  padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -327,7 +326,6 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
   margin-bottom: 8px;
 }
 
